@@ -79,6 +79,8 @@ pip install pyinstaller
 Раздел 1.3: Проблемы и их решения:
 1. Pyinstaller не может найти файл или зависимость: Убедитесь что имена всех папок из репозитория были добавлены через --add-data "folder;folder" с использованием соответствующего разделителя: ; - для Windows, : - для MacOS/Linux. Если не получается... ну запускайте прямо в редакторе, правда запускать его надо будет каждый раз.
 
+Изменено: готовые файлы теперь доступны во вкладке Releases.
+
 2. Подключенный накопитель не отображается в Storage Menu: Данная проблема обычно связанна с тем что у подключенного накопителя нет прав на чтение или запись, если флешка конечно живая у вас вообще?. Проблема в большинстве случаев может возникать на UNIX - подобных системах (MacOS/Linux). Хотя приложение использует /proc/mounts для сканирования подключенных устройств, но не учитывает истинное расположение точек монтирования. На Windows проблема с обнаружением возникать не должна благодаря использованию ctypes/GetLogicalDrives(). Там проблема как раз таки с правами доступа. Решение: если вы используете SD накопитель, то на нём должен быть переключатель Lock, который и защищает накопитель от записи. Если он активен, отключите его и обновите список кнопкой Update. Проблема должна исчезнуть. Storage Menu отображает только диски доступные на данный момент. Работа с сетевыми томами не гарантирована, сам хз. Если вы используете флешку - используйте живую флешку :).
 
 
@@ -181,6 +183,8 @@ I've already mentioned that this application is offered as a fast and convenient
 
 Section 1.3: Issues and their solutions:
 1. **Pyinstaller cannot find a file or dependency:** Make sure that all folder names from the repository have been added using `--add-data "folder;folder"` with the appropriate separator: `;` for Windows, `:` for macOS/Linux. If that doesn't work… well, just run it directly from the editor, though you’ll have to do that every time.
+
+Changed: Ready files are now available in the Releases tab.
 
 2. **A connected storage device does not appear in Storage Menu:** This issue is usually related to the connected device lacking read or write permissions — assuming your flash drive is actually alive at all. The problem can often occur on Unix‑like systems (macOS/Linux). Even though the application uses `/proc/mounts` to scan for connected devices, it does not account for the true mount point locations. On Windows, detection issues shouldn't arise thanks to the use of `ctypes/GetLogicalDrives()`. There the problem is indeed related to access rights. **Solution:** If you're using an SD card, it may have a Lock switch that protects it from writing. If it is active, turn it off and refresh the list with the Update button. The problem should disappear. Storage Menu only displays currently available drives. Working with network volumes is not guaranteed — I don't know either. If you're using a flash drive, use a live one :)
 
