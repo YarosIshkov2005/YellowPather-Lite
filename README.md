@@ -5,21 +5,26 @@
 [![PyQt5](https://img.shields.io/badge/PyQt5-5.15-green.svg)](https://pypi.org/project/PyQt5/)
 [![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey.svg)]()
 
-RU:
+🇷🇺 RU:
 
-Описание:
+📄 Описание v1.0.1:
 Дорогие друзья (если таковые имеются) сегодня я бы хотел представить вам свой новый проект: YellowPather Lite, который в принципе является (неофициально) продолжением устаревшей программы YellowPather написаной на Tkinter, с использованием таких библиотек как: PyQt5 (интерфейс/графика), Psutil (работа с памятью), Screeninfo (получение размеров экрана). Я хотел сделать быстрый и удобный навигатор файлов, который по скорости в некоторых случаях обгонял родной (системный проводник). Данный проект распространяется под лицензией GPLv3 (GNU General Public License version 3), из-за использования PyQt5 (Open Source) а также юридической стороны Riverbank Computing Limited (разработчиков PyQt).
 
 
 
-Оглавление:
+🔮 Что нового в версии v1.0.1:
+> Исправлен баг с обновлением Memory Chunks при возвращении в диск после извлечения накопителя.
+
+
+
+📖 Оглавление:
 1. Инструкция по установке, работа приложения, проблемы и их решения.
 2. Поддерживаемые системы (ОС).
 3. Установка зависимостей.
 
 
 
-Раздел 1.1: Инструкция по установке:
+📑 Раздел 1.1: Инструкция по установке:
 Перед тем как начать пользоваться нашим приложением, его конечно же нужно собрать в .exe, т.е сделать полноценное приложение из скачанного репозитория. Для этого нам понадобится Pyinstaller, или похожий упаковщик. Установить Pyinstaller можно при помощи менеджера пакетов pip, для этого в терминале кодового редактора нужно ввести команду:
 
 pip install pyinstaller
@@ -37,7 +42,7 @@ pip install pyinstaller
 
 
 
-Раздел 1.2: Работа приложения:
+📑 Раздел 1.2: Работа приложения:
 Я уже вам рассказывал что данное приложение предоставляется как быстрое и удобное решение для повседневных задач, связанных с папками или файлами, их открытием и исполнением. Да, пока что YellowPather Lite не умеет открывать самоисполняемые файлы из соображений безопасности, в будущем я планирую добавить флаг разрешенния для данной цели. Ладно, начинаем:
 
 1. Первый элемент интерфейса который мы можем увидеть на рабочем окне приложения (не считая кнопки закрытия приложения), это строка или поле для ввода путей Path Entry. В нём мы можем ввести путь к папке или файлу. Можно вводить как относительный так и абсолютный путь к нужному объекту. При переходе между папками путь к текущему каталогу отображается в поле в виде плейсхолдера как подсказка для пользователя.
@@ -76,7 +81,7 @@ pip install pyinstaller
 
 
 
-Раздел 1.3: Проблемы и их решения:
+📑 Раздел 1.3: Проблемы и их решения:
 1. Pyinstaller не может найти файл или зависимость: Убедитесь что имена всех папок из репозитория были добавлены через --add-data "folder;folder" с использованием соответствующего разделителя: ; - для Windows, : - для MacOS/Linux. Если не получается... ну запускайте прямо в редакторе, правда запускать его надо будет каждый раз.
 
 Изменено: готовые файлы теперь доступны во вкладке Releases.
@@ -85,7 +90,7 @@ pip install pyinstaller
 
 
 
-Раздел 2.1: Поддерживаемые ОС:
+📑 Раздел 2.1: Поддерживаемые ОС:
 YellowPather Lite является кроссплатформенным приложением, поэтому оно поддерживается всеми основными системами:
 
 Windows: 7, 8, 10, 11 (в нашем случае Windows 7).
@@ -97,7 +102,7 @@ IOS: ? (не поддерживается).
 
 
 
-Раздел 3.1: Установка зависимостей:
+📑 Раздел 3.1: Установка зависимостей:
 YellowPather Lite требует для работы следующие библиотеки:
 
 PyQt5 версии не ниже 5.15.
@@ -118,17 +123,26 @@ pip install -r requirements.txt
 
 
 
-EN:
+🇬🇧 EN:
 
-Description:
+📄 Description v1.0.1:
 Dear friends (if any exist), today I would like to introduce you to my new project: YellowPather Lite. It is basically an (unofficial) continuation of the outdated Tkinter-based program YellowPather, using libraries such as PyQt5 (UI/graphics), Psutil (memory handling), and Screeninfo (getting screen dimensions). I wanted to create a fast and convenient file navigator that could sometimes outperform the native (system) file explorer. This project is distributed under the GPLv3 license (GNU General Public License version 3) due to the use of PyQt5 (Open Source) and the legal aspects of Riverbank Computing Limited (the developers of PyQt).
 
-Table of Contents:
+
+
+🔮 What's new in v1.0.1:
+> Fixed a bug with updating Memory Chunks when returning to the drive after ejecting the drive.
+
+
+
+📖 Table of Contents:
 1. Installation instructions, application usage, issues and their solutions.
 2. Supported systems (OS).
 3. Installing dependencies.
 
-Section 1.1: Installation instructions:
+
+
+📑 Section 1.1: Installation instructions:
 Before you can start using our application, you need to build it into an .exe — that is, turn the downloaded repository into a proper application. For this we'll need Pyinstaller or a similar packager. You can install Pyinstaller using the pip package manager by entering the following command in your code editor's terminal:
 
 pip install pyinstaller
@@ -144,7 +158,9 @@ If you want to make your own changes to the application, you should also modify 
 
 Now let's start exploring the interface!
 
-Section 1.2: Application usage:
+
+
+📑 Section 1.2: Application usage:
 I've already mentioned that this application is offered as a fast and convenient solution for everyday tasks involving folders or files, including opening and running them. Yes, for now YellowPather Lite cannot execute self‑executable files for security reasons; I plan to add an allowed flag for that purpose in the future. Anyway, let's begin:
 
 1. The first interface element you'll see in the application window (not counting the close button) is the path input field, named **Path Entry**. Here you can enter a path to a folder or file. You can enter either a relative or absolute path to the desired item. When navigating between folders, the current directory's path is displayed in the field as a placeholder, acting as a hint for the user.
@@ -181,14 +197,18 @@ I've already mentioned that this application is offered as a fast and convenient
 
 17. **Update (2)** – button to refresh the disk list (do not confuse it with the interface update button).
 
-Section 1.3: Issues and their solutions:
+
+
+📑 Section 1.3: Issues and their solutions:
 1. **Pyinstaller cannot find a file or dependency:** Make sure that all folder names from the repository have been added using `--add-data "folder;folder"` with the appropriate separator: `;` for Windows, `:` for macOS/Linux. If that doesn't work… well, just run it directly from the editor, though you’ll have to do that every time.
 
 Changed: Ready files are now available in the Releases tab.
 
 2. **A connected storage device does not appear in Storage Menu:** This issue is usually related to the connected device lacking read or write permissions — assuming your flash drive is actually alive at all. The problem can often occur on Unix‑like systems (macOS/Linux). Even though the application uses `/proc/mounts` to scan for connected devices, it does not account for the true mount point locations. On Windows, detection issues shouldn't arise thanks to the use of `ctypes/GetLogicalDrives()`. There the problem is indeed related to access rights. **Solution:** If you're using an SD card, it may have a Lock switch that protects it from writing. If it is active, turn it off and refresh the list with the Update button. The problem should disappear. Storage Menu only displays currently available drives. Working with network volumes is not guaranteed — I don't know either. If you're using a flash drive, use a live one :)
 
-Section 2.1: Supported OS:
+
+
+📑 Section 2.1: Supported OS:
 YellowPather Lite is a cross‑platform application, so it is supported on all major systems:
 
 - **Windows:** 7, 8, 10, 11 (in our case, Windows 7).
@@ -198,7 +218,9 @@ YellowPather Lite is a cross‑platform application, so it is supported on all m
 - **Android:** ? (not supported).
 - **iOS:** ? (not supported).
 
-Section 3.1: Installing dependencies:
+
+
+📑 Section 3.1: Installing dependencies:
 YellowPather Lite requires the following libraries to run:
 
 - PyQt5 version not lower than 5.15.

@@ -110,8 +110,8 @@ class Application:
         """
         if not self.backend.path_manager.check_storage_exists():
             self.backend.path_manager.system_path = self.storage
-            self.backend.update.update_context_menu(self.storage, 0)
-            self.backend.update.update_storage_menu()
+            self.update_context_menu(self.storage, 0)
+            self.update_storage_menu()
             return
         self.backend.path_manager.scan_input_path()
 
@@ -121,8 +121,8 @@ class Application:
         """
         if not self.backend.path_manager.check_storage_exists():
             self.backend.path_manager.system_path = self.storage
-            self.backend.update.update_context_menu(self.storage, 0)
-            self.backend.update.update_storage_menu()
+            self.update_context_menu(self.storage, 0)
+            self.update_storage_menu()
             return
         self.backend.path_manager.delete_selected_path()
 
@@ -132,8 +132,8 @@ class Application:
         """
         if not self.backend.path_manager.check_storage_exists():
             self.backend.path_manager.system_path = self.storage
-            self.backend.update.update_context_menu(self.storage, 0)
-            self.backend.update.update_storage_menu()
+            self.update_context_menu(self.storage, 0)
+            self.update_storage_menu()
             return
         self.backend.path_manager.create_folder()
 
@@ -186,8 +186,8 @@ class Application:
 
         if not self.backend.path_manager.check_storage_exists():
             self.backend.path_manager.system_path = self.storage
-            self.backend.update.update_context_menu(self.storage, 0)
-            self.backend.update.update_storage_menu()
+            self.update_context_menu(self.storage, 0)
+            self.update_storage_menu()
             return
         self.backend.navigation.scan_selected_path(item, move)
 
@@ -203,8 +203,8 @@ class Application:
 
         if not self.backend.path_manager.check_storage_exists():
             self.backend.path_manager.system_path = self.storage
-            self.backend.update.update_context_menu(self.storage, 0)
-            self.backend.update.update_storage_menu()
+            self.update_context_menu(self.storage, 0)
+            self.update_storage_menu()
             return
         self.backend.navigation.move_position(level)
 
@@ -217,8 +217,8 @@ class Application:
         """
         if not self.backend.path_manager.check_storage_exists():
             self.backend.path_manager.system_path = self.storage
-            self.backend.update.update_context_menu(self.storage, 0)
-            self.backend.update.update_storage_menu()
+            self.update_context_menu(self.storage, 0)
+            self.update_storage_menu()
             return
         self.backend.navigation.set_position(item)
 
@@ -229,7 +229,7 @@ class Application:
         """
         if not self.backend.path_manager.check_storage_exists():
             self.backend.path_manager.system_path = self.storage
-            self.backend.update.update_context_menu(self.storage, 0)
-            self.backend.update.update_storage_menu()
+            self.update_context_menu(self.storage, 0)
+            self.update_storage_menu()
             return
         self.backend.navigation.back_to_home()
