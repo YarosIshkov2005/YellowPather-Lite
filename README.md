@@ -150,13 +150,13 @@
 > After entering the command, wait for the dependency to install.
 Now let's proceed with packaging (building) our application. To do this, open the repository folder (yellowpather-lite) and find the file named built.bat — it will help us build the application! If you opened the repository folder through an IDE, you should open the file using the system file explorer. Once you've found it, double‑click it, and a terminal window (cmd32 on Windows) should appear. The application build should start automatically.
 
-Wait until the build is complete, then close the terminal (click anywhere with the mouse).
+> Wait until the build is complete, then close the terminal (click anywhere with the mouse).
 
-That's it! Our application is now fully built. All that's left is to find the .exe file in the new `dist` folder and, if desired, add it to the Start menu or pin it to the taskbar.
+> That's it! Our application is now fully built. All that's left is to find the .exe file in the new `dist` folder and, if desired, add it to the Start menu or pin it to the taskbar.
 
-If you want to make your own changes to the application, you should also modify `built.bat` before building an update (example for adding a folder: `--add-data "new folder;new folder"`; for UNIX systems use `:` instead of `;`).
+> If you want to make your own changes to the application, you should also modify `built.bat` before building an update (example for adding a folder: `--add-data "new folder;new folder"`; for UNIX systems use `:` instead of `;`).
 
-Now let's start exploring the interface!
+> Now let's start exploring the interface!
 
 
 
